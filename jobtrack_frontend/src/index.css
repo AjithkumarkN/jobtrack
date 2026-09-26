@@ -1,0 +1,47 @@
+:root {
+  --paper: #E5E2D3;
+  --paper-raised: #EDEADF;
+  --ink: #23281F;
+  --ink-soft: #55503F;
+  --rule: #B9AF8E;
+  --rust: #8C2F1B;
+  --pine: #2F5233;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Zilla Slab', Georgia, serif;
+  font-weight: 700;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+
+a {
+  text-decoration: none;
+  color: var(--pine);
+}

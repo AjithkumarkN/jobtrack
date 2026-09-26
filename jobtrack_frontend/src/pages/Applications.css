@@ -1,0 +1,111 @@
+.applications-container {
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 12px;
+}
+
+.btn-primary {
+  background-color: var(--rust);
+  color: var(--paper);
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #6E2415;
+}
+
+.app-form {
+  background: var(--paper-raised);
+  border: 1px solid var(--ink);
+  padding: 24px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.app-form input,
+.app-form select,
+.app-form textarea {
+  padding: 10px 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.app-form textarea {
+  grid-column: span 2;
+  min-height: 70px;
+  resize: vertical;
+}
+
+.app-form button {
+  grid-column: span 2;
+  background-color: var(--pine);
+  color: var(--paper);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--paper-raised);
+}
+
+.applications-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--ink-soft);
+  border-bottom: 2px solid var(--ink);
+}
+
+.applications-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 14px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid currentColor;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-Wishlist { color: #55503F; }
+.status-Applied { color: var(--pine); }
+.status-Interview { color: var(--rust); }
+.status-Offer { color: #2F5233; background: #DCE6DC; }
+.status-Rejected { color: var(--rust); background: #F0DDD6; }
+
+.btn-delete {
+  background: none;
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  padding: 5px 12px;
+  font-size: 13px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: var(--ink-soft);
+  font-style: italic;
+}

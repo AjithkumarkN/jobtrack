@@ -1,0 +1,79 @@
+.tasks-container {
+  padding: 32px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tasks-container h2 {
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 12px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.task-form input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.task-form input[type="date"] {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.task-form button {
+  background-color: var(--pine);
+  color: var(--paper);
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--paper-raised);
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.task-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--rust);
+}
+
+.task-title {
+  flex: 1;
+  font-size: 15px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: var(--ink-soft);
+}
+
+.task-due {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.task-item .btn-delete {
+  background: none;
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  padding: 4px 10px;
+  font-size: 12px;
+}

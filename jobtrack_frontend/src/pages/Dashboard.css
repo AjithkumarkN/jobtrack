@@ -1,0 +1,75 @@
+.dashboard-container {
+  padding: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dashboard-container h2 {
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 12px;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 1px;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--paper-raised);
+  padding: 24px;
+  flex: 1;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 32px;
+  color: var(--rust);
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.status-breakdown {
+  background: var(--paper-raised);
+  border: 1px solid var(--ink);
+  padding: 24px;
+}
+
+.status-breakdown h3 {
+  margin-bottom: 16px;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.status-row:last-child {
+  border-bottom: none;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid currentColor;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-Wishlist { color: #55503F; }
+.status-Applied { color: var(--pine); }
+.status-Interview { color: var(--rust); }
+.status-Offer { color: #2F5233; background: #DCE6DC; }
+.status-Rejected { color: var(--rust); background: #F0DDD6; }
