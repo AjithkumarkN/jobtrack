@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary_storage.storage import RawMediaCloudinaryStorage
 from django.contrib.auth.models import User
 
 class Application(models.Model):
@@ -19,7 +20,7 @@ class Application(models.Model):
     location = models.CharField(max_length=200, blank=True)
     salary_range = models.CharField(max_length=100, blank=True)
     notes = models.TextField(blank=True)
-    resume_file = models.FileField(upload_to='resumes/', blank=True, null=True)
+    resume_file = models.FileField(upload_to='resumes/',storage=RawMediaCloudinaryStorage(),blank=True,null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
